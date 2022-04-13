@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="KRISHNA JERATH">
+        <meta name="description" content="Information">
+        <meta name="format-detection" content="telephone=no">
+        <title>FinalAssessment</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a490f17845.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header></header>
+        <main>
+            <!-- For Profile Picture buttons -->
+            <div id="myCard">
+                <img src="media/1.jpg" width=200px alt="Kavita">
+                <div>
+                    <h1>Kavita Dholariya</h1>
+                    <p>Web Developer,still in training but highly motivated and driven</p>
+                    <!--download a resume-->
+                    <a href="media/resume.pdf" download="resume">
+                        <button type="button" tabindex="1">
+                            <i class="fa fa-download"></i>
+                            Resume
+                        </button>
+                    </a>
+                    
+                   <!--Navigate tot-->
+                    <a href="#contact">
+                        <button type="button" tabindex="2">
+                            Contact Me
+                        </button>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <!-- Info about Yourself -->
+            <div id="info-wrapper">
+                <div class="info">
+                    <h2 class="info-headings">About Me</h2>
+                    <p>
+                    My name is Kavita Dholariya currently pursuing Computer Programming and Analysis at Seneca College.
+                    Since having an interest in IT  have decided to choose this course. My persevere mindset creates a solid path for me in order to learn software solutions and programming languages.
+                    My main focus is on Object-Oriented languages.
+                  
+                    My dream is to work in big companies such as Google or Microsoft as a software developer. 
+                    <br><br>I  enjoy reading books
+                    and spent most of my time in learning programming languages. My favorite programming languages is C++ and favorite book is "Shreemad Bhagavat Geeta". 
+                    </p>
+
+                    <h2>Academic Honesty</h2>
+
+                    <p>
+                        I declare that my Final assessment is wholly my own work in
+                        accordance
+                        with Seneca Academic Policy. No part of this assignment has been copied manually or
+                        electronically from any other source (including web sites) except for the information
+                        supplied by the WEB222 Professor and / or made available in this assignment for my
+                        use. <br><br>I also declare that no part of this assignment has been distributed to
+                        other students. <br>
+                    </p>
+                    <p>
+                        Date: April 13, 2022
+                    </p>
+
+                </div>
+
+                <div class="info">
+                    <h2 class="info-headings" id="basic-info">Basic Information</h2>
+                    <div id="basic-info-wrapper">
+                        <div id="info-header">
+                            <p>Name:</p> 
+                            <p>Email:</p>
+                            <p>Course:</p> 
+                            <p>Section:</p>
+                            <p>Student ID:</p>
+                            <p>Instructor:</p>  
+                         </div>
+
+                        <div id="info-content">
+                            <p>Kavita Dholariya</p>
+                            <p>kmdholariya@myseneca.ca</p>
+                            <p>WEB222</p>
+                            <p>NEE</p>
+                            <p>010935153</p>
+                            <p>Navreet Lehal</p>
+                        </div>   
+                    </div>         
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="sub-headers">
+                <h2>Education</h2>
+                <div class="school">
+                    <div class="credentials">
+                        <p class="expected">2022-2023<br>Pursuing</p>
+                        <h3 id="expCred">Advanced Diploma</h3>
+                    </div>
+
+                    <div class="school-info">
+                        <h3>Advanced Diploma</h3>
+                        <small>Seneca College</small>
+                        <p>Computer Programming and Analysis</p>
+                    </div>
+                </div>
+
+                <div class="school">
+                    <div class="credentials">
+                       
+                        <h3>A Bachelor's degree</h3>
+                    </div>
+
+                    <div class="school-info">
+                        <h3>A Bachelor's degree</h3>
+                        <small>Electronics Engineerinng B.E E.C. 2008-2012</small>
+                   
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Contact Form -->
+            <div class="sub-headers" id="contact">
+                <h2>Contact Form</h2>
+                <p><span>*</span> Required Field</p>
+                <form id="contact-form" action="https://httpbin.org/post" method="POST">
+                    <label for="full-name">Full Name <span>*</span></label>
+                    <input
+                        id="full-name" 
+                        name="full-name"
+                        autocomplete="name"
+                        type="text"
+                        placeholder="Full Name"    
+                        title="Enter your full name"
+                        tabindex="3"
+                        required
+                    >
+
+                    <label for="organization">Organization</label>
+                    <input
+                        id="organization" 
+                        name="organization"
+                        type="text"
+                        placeholder="Company Name"    
+                        title="Enter organization you represent"
+                        tabindex="4"
+                    >
+
+                    <label for="email">Email <span>*</span></label>
+                    <input
+                        id="email" 
+                        name="email"
+                        autocomplete="email"
+                        type="email"
+                        placeholder="username@email.com"    
+                        pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,}$"
+                        title="Enter an email address"
+                        tabindex="5"
+                        required
+                    >
+
+                    <label for="city">City <span>*</span></label>
+                    <input
+                        id="city"
+                        name="city"
+                        title="Enter City"
+                        placeholder="Cambridge"
+                        list="cities"
+                        tabindex="6"
+                        required    
+                    >
+                    <datalist id="cities">
+                        <option value="Toronto"></option>
+                        <option value="Cambridge"></option>
+                        <option value="Ottawa"></option>
+                        <option value="Waterloo"></option>
+                        <option value="London"></option>
+                        <option value="Kingston"></option>
+                        <option value="Windsor"></option>
+                        <option value="Barrie"></option>
+                        <option value="Other"></option>
+                    </datalist>
+
+                    <label for="postal">Postal Code <span>*</span></label>
+                    <input
+                        id="postal" 
+                        name="postal"
+                        autocomplete="postal-code"
+                        type="text"
+                        placeholder="N3C 4K6"    
+                        pattern="^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d$"
+                        title="Enter valid Canadian postal code"
+                        tabindex="7"
+                        required
+                    >
+
+                    <label>Subject <span>*</span></label>
+                    <div id="subject">
+                        
+                        <div>
+                            <input
+                            id="question"
+                            name="subject"
+                            type="radio"
+                            tabindex="8"
+                            required
+                            >
+                            <label for="question">Question</label>
+                        </div>
+                        
+                        <div>
+                            <input
+                            id="comment"
+                            name="subject"
+                            type="radio"
+                            tabindex="9"
+                            required
+                            >
+                            <label for="comment">Comment</label>
+                        </div>
+                        
+                        <div>
+                            <input
+                            id="hiring"
+                            name="subject"
+                            type="radio"
+                            tabindex="10"
+                            required
+                            >
+                            <label for="hiring">Hiring</label>
+                        </div>
+
+                        <label id="rate-label" for="rate" hidden>Hourly Rate <span>*</span></label>
+                        <input
+                            id="rate"
+                            name="rate"
+                            type="text"
+                            title="Enter CDN dollar value"
+                            pattern="^\$?\d+(\.\d{2})?$"
+                            placeholder = "$50";
+                            tabindex="11"
+                            hidden
+                        >
+                    </div>
+                   
+                    <label for="message">Message <span>*</span></label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        placeholder="Enter message here"
+                        maxlength="2000"
+                        tabindex="12"
+                        required
+                    ></textarea>
+
+                    <div id="form-button">
+                        <input type="submit" name="submit" value="Submit" tabindex="13">
+                        <input type="reset" name="reset" value="Reset" tabindex="14">
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
